@@ -17,7 +17,7 @@ class MemcacheCache implements CacheInterface
   /**
    * Serveur MemCache
    */
-  private $memcache = null;
+  protected $memcache = null;
 
   /**
    * Constructeur
@@ -104,7 +104,7 @@ class MemcacheCache implements CacheInterface
    *  @param  string  $key  Clé à rendre unique
    *  @return string        Clé unique
    */
-  private function buildMKey($key)
+  protected function buildMKey($key)
   {
     return sprintf('%s_%s', __FILE__, $key);
   }

@@ -18,7 +18,7 @@ class FileCache implements CacheInterface
    *
    * @var string
    */
-  private $cachePath;
+  protected $cachePath;
 
   /**
    * Constructeur
@@ -113,7 +113,7 @@ class FileCache implements CacheInterface
    * @param  string  $key  Clé à encoder
    * @return string        Clé encodée
    */
-  private function getEncodedKey($key)
+  protected function getEncodedKey($key)
   {
     return hash('md5', $key);
   }

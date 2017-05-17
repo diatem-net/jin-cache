@@ -21,7 +21,7 @@ class Cache
    * Classe de gestion du cache.
    * @var CacheInterface
    */
-  private static $cm = null;
+  protected static $cm = null;
 
   /**
    * Définit le type de cache à utiliser
